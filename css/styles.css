@@ -1,5 +1,6 @@
 body {
-    font-family: "Montserrat";
+    
+
     text-align: center;
   }
   
@@ -21,9 +22,11 @@ body {
     line-height: 145%;
   }
   
-  .section-heading {
+  .section-heading3 {
     font-size: 3rem;
     line-height: 1.5;
+   
+
   }
   
   /* Containers */
@@ -73,6 +76,7 @@ body {
   .download-button {
     margin: 5% 3% 5% 0;
   }
+  
   
   /* Title Section */
   
@@ -124,13 +128,39 @@ body {
   
   .price-text {
     font-size: 1.5rem;
-    line-height: 1.2;
+    /*line-height: 1.2;*/
+    color:#E46767;
+    
   }
   
   .pricing-column {
     padding: 3% 2%;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
   }
-  
+  /*section 4*/
+  .section-heading{
+       font-family: "Fira Sans Extra Condensed", sans-serif;
+      font-size: 2.5rem ;
+      font-weight: bold;
+      word-break: break-word;
+
+  }
+  /* Buttons*/
+  .slack{
+      background-color:#E46767;
+      color:white;
+    font-family: "Lato",sans-serif;
+    box-sizing: inherit;
+    padding: 5px;
+  }
   /* Footer Section */
+  .footer-text{
+      color:#4a4a4a;
+      font-size: 15px;
+      
+
+
+  }
+ 
   
   
