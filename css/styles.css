@@ -131,23 +131,6 @@ body {
     padding: 3% 2%;
   }
   
-<<<<<<< Updated upstream
   /* Footer Section */
   
   
-  @media (max-width: 1028px) {
-  
-    #title {
-      text-align: center;
-      color:Black;
-    }
-  
-    .title-image {
-      position: static;
-      transform: rotate(0);
-    }
-  }
-  
-=======
-  /* Footer Section */
->>>>>>> Stashed changes
