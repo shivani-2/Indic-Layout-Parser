@@ -30,8 +30,12 @@ body {
   .container-fluid{
     padding: 7% 15%;
   }
+ 
   
   /* Sections */
+  .container{
+      text-align: left;
+  }
   
   .colored-section {
     background-color: #ff4c68;
@@ -126,6 +130,7 @@ body {
   
     #title {
       text-align: center;
+      color:Black;
     }
   
     .title-image {
