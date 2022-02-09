@@ -1,6 +1,7 @@
 body {
     font-family: "Fira Sans Extra Condensed", sans-serif;
     text-align: center;
+
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -58,6 +59,8 @@ body {
   .nav-link {
     color: white;
   }
+
+
   
   /* Section 1 */
   
@@ -99,13 +102,6 @@ body {
   #title .container-fluid {
     padding: 2% 5% 2%;
   }
-  
-
-
-
-
-
-
 
   /* Features Section */
   
@@ -128,6 +124,11 @@ body {
   
   .icon:hover {
     color: #ff4c68;
+  }
+
+  #BTN{
+    
+    cursor: pointer;
   }
   
   /* Pricing Section */
@@ -156,9 +157,7 @@ body {
 
   }
 
-  .slack-section{
 
-  }
 
   .slack{
     background-color:#E46767;
