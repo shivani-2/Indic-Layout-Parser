@@ -113,39 +113,39 @@
         <div class="col-lg-3">
           <div class="menu">
             <p class="menu-label"> Layout detection </p>                              
-                <button id="dlm" onclick="showHideContent(0)" checked>Deep Learning Models</button><br>
-                <button id="ptm" onclick="showHideContent(1)">Pre-trained Model Zoo</button> 
+                <button type="button" class="menu-btn btn btn-outline-primary" id="dlm" onclick="showHideContent(0)" checked>Deep Learning Models</button><br>
+                <button type="button" class="menu-btn btn btn-outline-primary" id="ptm" onclick="showHideContent(1)">Pre-trained Model Zoo</button> 
 
             <p class="menu-label"> Post-Processing </p>                             
-                <button id="lds" onclick="showHideContent(2)">Layout Data Structure</button><br>
-                <button id="v" onclick="showHideContent(3)">Visualization</button><br> 
+                <button type="button" class="menu-btn btn btn-outline-primary" id="lds" onclick="showHideContent(2)">Layout Data Structure</button><br>
+                <button type="button" class="menu-btn btn btn-outline-primary" id="v" onclick="showHideContent(3)">Visualization</button><br> 
               
           </div>
         </div>
 
-        <div class="col-lg-9">
+        <div class="content-col col-lg-9">
 
             <div id="deep">
             <h2 class="section-heading">Accurate Layout Detection with a Simple and Clean Interface</h2>
-            <p>With the help of state-of-the-art deep learning models, Layout Parser enables extracting complicated document structures using only several lines of code. This method is also more robust and generalizable as no sophisticated rules are involved in this process.</p>
-            <img src="https://layout-parser.github.io/assets/images/index/api-example.png" id="deep">
+            <p>With the help of state-of-the-art deep learning models, <span style="font-weight: bold;">Indic Layout Parser</span> enables extracting complicated <span style="font-weight: bold;">Sanskrit</span> document structures using only several lines of code. This method is also more robust and generalizable as no sophisticated rules are involved in this process.</p>
+            <img class="content-image" src="images/image1.jpg">
           </div>
 
             <div id="pre">
               <h2 class="selection-heading" id="pre">A Wealth of Pre-trained Models on Different Datasets</h2>
-              <p>To accommodate heterogenous document layout structures, Layout Parser a collection of DL models trained on different datasets. Currently the are 9 models trained on 5 diverse datasets, and they can be loaded via a unified interface.</p>
-              <img src="https://layout-parser.github.io/assets/images/index/dataset-illustration.png">
+              <p>To accommodate heterogenous document layout structures, <span style="font-weight: bold;">Indic Layout Parser</span> a collection of DL models trained on different datasets. Currently the are 9 models trained on 5 diverse datasets, and they can be loaded via a unified interface.</p>
+              <img class="content-image" src="images/image2.jpg">
             </div>
 
           <div id="lay">
             <h2 class="selection-heading" id="lay">Easy Layout Data Manipulation and Processing</h2>
             <p>Layout Parser supports different levels of abstraction of layout data, and provide three classes of representation for layout data, namely, Coordinates, TextBlock, and Layout. The same operations and transformations are supported inter and intra these classes to maximize the efficiency when processing the layout data.</p>
-            <img src="https://layout-parser.github.io/assets/images/index/api-specification.png">
+            <img class="content-image" src="images/image3.jpg">
           </div>
           <div id="vis">
             <h2 class="selection-heading" id="vis">Highly Customizable Layout Data Visualization</h2>
             <p>Layout Parser visualizes the layout data using a simple syntax: lp.draw_box or lp.draw_text. It provides two modes for displaying the layout data: Mode I directly overlays the layout region bounding boxes and categories over the original image. Mode II recreates the original document via drawing the OCR’d texts at their corresponding positions on the image canvas.</p>
-            <p><img src=https://layout-parser.github.io/assets/images/index/viz-example.png></p>
+            <p><img class="content-image" src="images/image4.jpg"></p>
           </div>
 
 
