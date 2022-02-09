@@ -21,10 +21,20 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
   <script src="indx.js"></script>
 </head>
 
-<body>
+<body onload="loadfunction()">
+
+  <script>
+    function loadfunction()
+    {
+      document.querySelector("#pre").style.display="none";
+      document.querySelector("#lay").style.display="none";
+      document.querySelector("#vis").style.display="none";
+    }
+  </script>
 
   <!-- Section 1 -->
 
@@ -74,7 +84,6 @@
 
         <div class="col-lg-8">
           <h1 class="big-heading">Layout Analysis - in 4 Lines of Code</h1>
-          <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button> -->
           <h5 class="sub-heading">Transform <span style="font-weight: 700;">SANSKRIT</span> document image analysis pipelines with the full power of Deep Learning.</h5>    
           
           <button type="button" class="btn btn-outline-light btn-lg download-button">
@@ -104,27 +113,30 @@
         <div class="col-lg-3">
           <div class="menu">
             <p class="menu-label"> Layout detection </p>                              
-                <button id="dlm" onclick="showHideContent()" checked>Deep Learning Models</button><br>
-                <button id="ptm" onclick="showHideContent()">Pre-trained Model Zoo</button> 
+                <button id="dlm" onclick="showHideContent(0)" checked>Deep Learning Models</button><br>
+                <button id="ptm" onclick="showHideContent(1)">Pre-trained Model Zoo</button> 
 
             <p class="menu-label"> Post-Processing </p>                             
-                <button id="lds" onclick="showHideContent()">Layout Data Structure</button><br>
-                <button id="v" onclick="showHideContent()">Visualization</button><br> 
+                <button id="lds" onclick="showHideContent(2)">Layout Data Structure</button><br>
+                <button id="v" onclick="showHideContent(3)">Visualization</button><br> 
               
           </div>
         </div>
 
         <div class="col-lg-9">
-          <div id="deep">
-            <h2 class="section-heading" id="deep">Accurate Layout Detection with a Simple and Clean Interface</h2>
-            <p id="deep">With the help of state-of-the-art deep learning models, Layout Parser enables extracting complicated document structures using only several lines of code. This method is also more robust and generalizable as no sophisticated rules are involved in this process.</p>
+
+            <div id="deep">
+            <h2 class="section-heading">Accurate Layout Detection with a Simple and Clean Interface</h2>
+            <p>With the help of state-of-the-art deep learning models, Layout Parser enables extracting complicated document structures using only several lines of code. This method is also more robust and generalizable as no sophisticated rules are involved in this process.</p>
             <img src="https://layout-parser.github.io/assets/images/index/api-example.png" id="deep">
           </div>
-          <div id="pre">
-            <h2 class="selection-heading" id="pre">A Wealth of Pre-trained Models on Different Datasets</h2>
-            <p>To accommodate heterogenous document layout structures, Layout Parser a collection of DL models trained on different datasets. Currently the are 9 models trained on 5 diverse datasets, and they can be loaded via a unified interface.</p>
-            <img src="https://layout-parser.github.io/assets/images/index/dataset-illustration.png">
-          </div>
+
+            <div id="pre">
+              <h2 class="selection-heading" id="pre">A Wealth of Pre-trained Models on Different Datasets</h2>
+              <p>To accommodate heterogenous document layout structures, Layout Parser a collection of DL models trained on different datasets. Currently the are 9 models trained on 5 diverse datasets, and they can be loaded via a unified interface.</p>
+              <img src="https://layout-parser.github.io/assets/images/index/dataset-illustration.png">
+            </div>
+
           <div id="lay">
             <h2 class="selection-heading" id="lay">Easy Layout Data Manipulation and Processing</h2>
             <p>Layout Parser supports different levels of abstraction of layout data, and provide three classes of representation for layout data, namely, Coordinates, TextBlock, and Layout. The same operations and transformations are supported inter and intra these classes to maximize the efficiency when processing the layout data.</p>
