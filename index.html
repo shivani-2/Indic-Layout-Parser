@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Layout Parser</title>
+  <title>Indic Layout Parser</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
@@ -28,7 +28,7 @@
 
   <!-- Section 1 -->
 
-  <section class="gradient colored-section" id="title">
+  <section class="gradient" id="title">
 
     <div class="container-fluid">
 
@@ -75,14 +75,14 @@
         <div class="col-lg-8">
           <h1 class="big-heading">Layout Analysis - in 4 Lines of Code</h1>
           <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button> -->
-          <h5 class="sub-heading">Transform document image analysis pipelines with the full power of Deep Learning.</h5>    
+          <h5 class="sub-heading">Transform <span style="font-weight: 700;">SANSKRIT</span> document image analysis pipelines with the full power of Deep Learning.</h5>    
           
           <button type="button" class="btn btn-outline-light btn-lg download-button">
             <span class="is-small mr-2">
               <svg class="svg-inline--fa fa-copy fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="copy" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg><!-- <i class="fas fa-copy"></i> -->
             </span>
 
-            <span class="pip-install">pip install layoutparser</span>
+            <span class="pip-install">pip install indic-layout-parser</span>
           </button>
         </div>
 
@@ -94,11 +94,11 @@
 
   <!-- Section 2 -->
 
-  <section class="white-section" id="pricing">
+  <section class="" id="section2">
 
-    <h2 class="section-heading">What is Layout Parser?</h2>
-    <h5>A Unified Toolkit for Deep Learning Based Document Image Analysis.</h5>
-    <form action="#"></form>
+    <h2 class="section-heading">What is Indic Layout Parser?</h2>
+    <h5 class="section-sub-heading">A Unified Toolkit for Deep Learning Based Document Image Analysis.</h5>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
@@ -110,16 +110,6 @@
             <p class="menu-label"> Post-Processing </p>                             
                 <button id="lds" onclick="showHideContent()">Layout Data Structure</button><br>
                 <button id="v" onclick="showHideContent()">Visualization</button><br> 
-                <button id="es" onclick="showHideContent()">Export and Storage </button>
-             
-
-            <p class="menu-label"> Customization </p>
-                <button id="tlm" onclick="showHideContent()">Train Layout Models </button><br>
-                <button id="edl" onclick="showHideContent()"> Efficient Data Labeling </button>
-
-            <p class="menu-label"> Community & Resources </p>                                            
-                <button id="sp" onclick="showHideContent()"> Sharing Platform</button><br>
-                <button id="tv" onclick="showHideContent()"> Tutorial Video </button>
               
           </div>
         </div>
@@ -145,28 +135,6 @@
             <p>Layout Parser visualizes the layout data using a simple syntax: lp.draw_box or lp.draw_text. It provides two modes for displaying the layout data: Mode I directly overlays the layout region bounding boxes and categories over the original image. Mode II recreates the original document via drawing the OCR’d texts at their corresponding positions on the image canvas.</p>
             <p><img src=https://layout-parser.github.io/assets/images/index/viz-example.png></p>
           </div>
-          <div id="exp">
-            <h2 class="selection-heading" id="exp">Export Layout Data in Your Favorite Format</h2>
-            <p>Layout Parser supports loading and exporting layout data to different formats, including general formats like csv, json, or domain-specific formats like PAGE, COCO, or METS/ALTO format (Full support for them will be released soon). It provides the flexibility for integrating Layout Parser with other document image analysis pipelines, and makes it easy to share your outputs with the community.</p>
-          </div>
-          <div id="train">
-            <h2 class="selection-heading" id="train">Easy to Train Your Own Layout Models with Best Accuracy</h2>
-            <p>Layout Parser also comes with full support for customized layout model training on your own dataset. This enables you to achieve optimal prediction accuracy on your own dataset and can simplify your pipeline. Different training mode are supported, i.e., training from scratch or fine-tuning from an existing model. Learn more details at Layout-Parser/layout-model-training.</p>
-          </div>
-          <div id="eff">
-            <h2 class="selection-heading" id="eff">Efficiently Creating Your Training Dataset</h2>
-            <p>No labeled training data available? Don’t worry! Layout Parser also incorporates a data annotation toolkit that enables creating the training dataset much more efficiently. Shown in the illustration below, the tool loads layout predictions from pre-trained models (a), and users only need to select and check a small percentage of model predictions to correct or relabel (b). False-Negative Highlighter (c) helps recognize mis-identified objects from the model predictions. After these steps, the full image annotation is created with less effort.</p>
-            <img src="https://layout-parser.github.io/assets/images/index/labeling-ui.png">
-          </div>
-          <div id="mod">
-            <h2 class="selection-heading" id="mod">Layout Models & Pipelines Sharing Platform</h2>
-            <p>Layout Parser also aims to create a community platform for document image analysis (DIA) research and application. One key challenge in current DIA is the reusability of both layout models and pipelines. Layout Parser maintainers are currently working on implementing the platform for practitioners to share their models and pipelines easily. By streamline the distribution of layout models, as well as promoting the reusability of layout pipelines, it can potentially transform the DIA workflow and pipelines broadly.</p>
-            <img src="https://layout-parser.github.io/assets/images/index/platform.jpeg">
-          </div>
-          <div id="yt">
-            <p>Note: This is Layout Parser’s presentation video at ICDAR 2021, a top venue for document recognition and understanding. In this talk, we discussed the design of the Layout Parser and demoed its key features.</p>
-
-          </div>
 
 
          
@@ -180,72 +148,74 @@
 
   <!-- Section 3 -->
 
-  <section class="white-section" id="pricing">
+  <section id="section3">
 
-    <h2 class="section-heading3">Get started!</h2>
-    <h5>Learn layout parser via a collection of carefully curated tutorials.</h5>
+    <h2 class="section-heading">Get started!</h2>
+    <h5 class="section-sub-heading">Learn layout parser via a collection of carefully curated tutorials.</h5>
 
     <div class="row">
 
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="">
-            <h2 class="price-text">Install LayoutParser</h2>
-            <p>A complete instruction for installing the main Layout Parser library and auxiliary components.</p>
+      <div class="column3 col-lg-4 col-md-6">
+        <div class="cardss">
+            <h2 class="cardss-text">Install IndicLayoutParser</h2>
+            <p class="cardss-subtext">A complete instruction for installing the main Layout Parser library and auxiliary components.</p>
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="">
-            <h2 class="price-text">Deep Layout Parsing</h2>
-            <p>Learn how to load DL Layout models and use them for layout detection.</p>
+      <div class="column3 col-lg-4 col-md-6">
+        <div class="cardss">
+            <h2 class="cardss-text">Deep Layout Parsing</h2>
+            <p class="cardss-subtext">Learn how to load DL Layout models and use them for layout detection.</p>
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4">
-        <div class="">
-            <h2 class="price-text">Layout Model Zoo</h2>
-            <p>The full list of layout models currently available in Layout Parser.</p>
+      <div class="column3 col-lg-4">
+        <div class="cardss">
+            <h2 class="cardss-text">Layout Model Zoo</h2>
+            <p class="cardss-subtext">The full list of layout models currently available in Layout Parser.</p>
         </div>
       </div>
     </div>
 
   </section>
 
-  <hr>
+  <!-- <hr> -->
 
   <!-- Section 4 -->
 
-  <div class="container">  
+  <div class="slack-section">
+    <div class="container">  
 
-       <h2 class="section-heading">Join us on Slack!</h2>
-       <div class="slack-section">
-        <table>
-          <tr>      
-           <td>
-            <h5 class="section-heading2">Questions or Bugs? Come and join our slack channel! Let's figure out that together and make a vibrant Layout Parser community.</h5>
-           </td>
-           <td class="section-heading2">
-            <img src="https://layout-parser.github.io/assets/site/slack-lp.svg">
-           </img>
-           </td>
-          </tr>
+      <h2 class="section-heading">Join us on Slack!</h2>
+      <div class="slack-sub-section">
+       <table>
+         <tr>      
+          <td>
+           <h5 class="section-sub-heading">Questions or Bugs? Come and join our slack channel! Let's figure out that together and make a vibrant Layout Parser community.</h5>
+          </td>
+          <td class="section-heading2">
+           <img src="https://layout-parser.github.io/assets/site/slack-lp.svg">
+          </img>
+          </td>
+         </tr>
 
-          <tr>
-           <td>
-           <button class="slack">Join our #Slack</button>
-           </td>
-          </tr>
-  
-         </table>
-       </div>
+         <tr>
+          <td>
+          <button type="button" class="btn slack">Join our #Slack</button>
+          </td>
+         </tr>
+ 
+        </table>
+      </div>
+    </div>
   </div>
 
-  <hr>
+  <!-- <hr class="slack-section"> -->
   
   <!-- Footer -->
 
-  <footer class="footer-section" id="footer">
-      <h5 class="footer-text">Created and maintained by Layout Parser Developers. Built with Shivani.</h5>
+  <footer class="footer-section">
+      <h5 class="footer-text" style="margin-bottom: 0px;">Created and maintained by Indic Layout Parser Developers. Built by Shivani.</h5>
   </footer>
 
 
